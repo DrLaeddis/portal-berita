@@ -1,0 +1,50 @@
+<main class="py-5">
+    <div class="max-w-[1200px] m-auto flex items-center xl:items-start flex-col gap-5">
+
+        <div class="">
+            <h2 class="text-[1.5em] font-semibold">Real-Time News</h2>
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 mt-5">
+                <div *ngFor="let article of displayRealTime" class="w-full">
+                    <app-news-card [article]="article"></app-news-card> <!-- Menggunakan komponen news-card -->
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <button routerLink="/real-time-news" class="border-[1px] rounded-lg px-2 py-1 bg-[#326891]">
+                    <span class="text-white capitalize">get more Real-Time News </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="">
+            <h2 class="text-[1.5em] font-semibold">Top Stories</h2>
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 mt-5">
+                <div *ngFor="let article of displayArticle" class="w-full">
+                    <app-news-card [article]="article"></app-news-card> <!-- Menggunakan komponen news-card -->
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <button routerLink="/top-stories" class="border-[1px] rounded-lg px-2 py-1 bg-[#326891]">
+                    <span class="text-white capitalize">see more top stories</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="">
+            <h2 class="text-[1.5em] font-semibold">Most Popular</h2>
+            <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 mt-5">
+                <div *ngFor="let article of displayMostPopular" class="w-full">
+                    <app-news-card [article]="article"></app-news-card> <!-- Menggunakan komponen news-card -->
+                </div>
+            </div>
+
+            <div class="mt-5">
+                <button routerLink="/most-popular" class="border-[1px] rounded-lg px-2 py-1 bg-[#326891]">
+                    <span class="text-white capitalize">look another popular article</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</main>

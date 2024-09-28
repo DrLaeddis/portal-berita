@@ -1,0 +1,10 @@
+<div class="flex flex-col ">
+    <div class="mb-2">
+        <img [src]="article.imageUrl || 'default-image.jpg'" alt="flas news image">
+    </div>
+    <div class="flex flex-col gap-2">
+        <p class="text=[0.6em]">{{ article.formattedDate ? article.formattedDate : "-" }}</p>
+        <p class="text-[1.3em] font-semibold">{{ article.title ? article.title : "-" }}</p>
+        <p class="text-[0.9em] text-justify">{{ article.abstract ? article.abstract : "-" }}</p>
+    </div>
+</div>

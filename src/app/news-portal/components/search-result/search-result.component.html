@@ -1,0 +1,17 @@
+<main class="py-5">
+    <div class="max-w-[1200px] m-auto flex flex-col gap-5">
+        <button routerLink="/" class="w-[15%] rounded-lg border-[1px] py-2 bg-[#326891]">
+            <span class="text-white">Back to Home</span>
+        </button>
+
+        <div class="">
+            <h2 class="text-[1.5em] font-semibold">Search Result</h2>
+            <div class="grid grid-cols-3 gap-5 mt-5">
+                <div *ngFor="let article of articles" class="w-full">
+                    <app-news-card [article]="article"></app-news-card> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

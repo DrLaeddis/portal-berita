@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-link {
+    font-weight: bold; /* Contoh: membuat teks menjadi tebal */
+    color: #326891; /* Contoh: mengubah warna teks */
+}
