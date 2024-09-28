@@ -1,27 +1,24 @@
 # PortalBeritaNyc
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
+Portal Berita Nyc ini adalah sample portal berita yang menggunakan API dari new york time,
+
+Setelah melakukan git clone, jalankan:
+
+npm install
+
+Project Portal Berita Nyc ini menggunakan teknologi
+1. Angular
+2. Tailwindcss
+3. Axios
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Jalankan `ng serve` untuk server dev. Navigasikan ke `http://localhost:4200/`. Aplikasi akan dimuat ulang secara otomatis jika Anda mengubah salah satu file sumber.
 
-## Code scaffolding
+## Untuk Menjalankan Test
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Jalankan `ng test` untuk menjalankan pengujian unit melalui  [Karma].
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Jalankan `ng e2e` untuk menjalankan pengujian end-to-end melalui platform pilihan Anda. Untuk menggunakan perintah ini, Anda harus terlebih dahulu menambahkan paket yang mengimplementasikan kemampuan pengujian end-to-end.
